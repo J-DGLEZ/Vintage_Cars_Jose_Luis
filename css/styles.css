@@ -1,6 +1,26 @@
 * {
     box-sizing: border-box;
+    margin: 5px 5px;
 }
 html {
     font-size: 14px;
+}
+.map {
+    display: flex;
+    justify-content: center;
+}
+.img {
+    height: 120px
+}
+.title {
+    font-family: cursive;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.paragraph {
+    font-family: cursive;
+}
+.container {
+    display: flexbox;
+    flex-direction: row;
 }

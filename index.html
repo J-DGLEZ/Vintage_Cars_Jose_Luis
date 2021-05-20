@@ -5,80 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vintage Car's Jose Luis</title>
+    
+<link  rel="icon"   href="css/images/battery.png" type="image/png" />
+
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- this the website header -->
-       <H1 class="title text-center bg-warning">THE VINTAGE CARS</H1>
+       <H1 class="title text-center" id="up">THE VINTAGE CARS</H1>
      <!-- Navigation bat -->
-       <nav class="navbar navbar-light bg-light">
+       <nav class="navbar navbar-light bg-light border solid" >
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="css/images/Engrenage.png" alt="This the Company's Logo" width="30" height="24" class="d-inline-block align-text-top"></a>
-            <a class="navbar-brand" href="#">CARS</a>
-            <a class="navbar-brand" href="#">Enquiries</a>
-            <a class="navbar-brand bg-primary" href="#">Contacto</a>
+            <a class="navbar-brand" >
+                <img src="css/images/battery.png" alt="This the Company's Logo" width="30" height="24" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand" href="#cars">CARS</a>
+            <a class="navbar-brand" href="#enquires">ENQUIRIES</a>
+            <a class="navbar-brand " href="#contact">CONTACT</a>
+          
          </div>
       </nav>
 
-  
+  <section id="cars">
+      <!-- Cars cards -->
      <div class="container">
          <div class="row justify-content-center">
 
       <div class="card" style="width: 16rem; height: auto">
-        <img src="css/images/citroen-2cv.jpg" class="card-img-top" alt="...">
+        <img class="img" src="css/images/citroen-2cv.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Citroen 2cv</h6>
-          <p class="card-text">beutiful Cintroen from 1972. Very well care.</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">Go somewhere</a>
+          <p class="card-text">85.997 Km in the odometer only, Manual transmission, Petrol   1792</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Enquire Now</a>
         </div>
     </div>
       <div class="card" style="width: 16rem; height: auto ">
-        <img src="css/images/Renault_5.jpg" class="card-img-top" alt="...">
+        <img class="img" src="css/images/Renault_5.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Renault 5</h6>
-          <p class="card-text">Some quick example text to blk .</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">Go somewhere</a>
+          <p class="card-text"> 135.987 Km in the odometer, Manual transmission, cyl 1.4L Petrol, 1980</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Enquire Now</a>
         </div>
       </div>
       <div class="card" style="width: 16rem; height: auto">
-        <img src="css/images/Seiscientos.jpg" class="card-img-top" alt="...">
+        <img class="img " src="css/images/Seiscientos.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h6 class="card-title">Seat Seiscientos</h6>
-          <p class="card-text">Some quick eulk of the card's content.</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">Go somewhere</a>
+          <h6 class="card-title">Seat 600</h6>
+          <p class="card-text">95.071 Km in the odometer, Manual transmission, cyl 600cc Petrol, 1983</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Enquire Now</a>
         </div>
       </div>
       <div class="card" style="width: 16rem; height: auto">
-        <img src="css/images/Fiat 850.jpg" class="card-img-top" alt="...">
+        <img class="img" src="css/images/Fiat 850.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Fiat 850</h6>
-          <p class="card-text">Some quick of the card's content.</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">Go somewhere</a>
+          <p class="card-text">115.987 Km in the odometer, Manual transmission, cyl 850cc Petrol. 1978</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Enquire Now</a>
         </div>
       </div>
-
-
-
     </div>
     </div> 
     
-      
+</section> 
 
+<section id="enquires" class="border border-light bg-light ">  
+<!-- form -->
+   Enquire About a car Now !!
+<form>
+   
+    <div class="mb-3 bg-light">
+      <label for="exampleInputEmail1" class="form-label">Full Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3 bg-light " >
+      <label for="exampleInputPassword1" class="form-label">Email Address</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="contaner border"> <h6>Choose the car you like</h6></div>
+    <select class="form-select bg-light" aria-label="Default select example">
+        <option selected>Choose a Car</option>
+        <option value="1">Citroen 2cv</option>
+        <option value="2">Renault 5 </option>
+        <option value="3">Seat 600 </option>
+        <option value="4">Fiat 850 </option>
+      </select>
+      <div class="mb-3 bg-light" >
+        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+   
+    <button type="submit" class="btn btn-outline-primary offset-6">Submit</button>
+    
+  </form>
+</section>
 
+<section id="contact">
+  <div class="container"></div>
+<!-- footer and contact details -->
+<footer>
+    <p class="paragraph">1-25 PL <br>
+    Address: Mullen Vic 3105 <br>
+    Phone: 0456 789 765 <br>
+    Email: vintage_cars@gmail.com
+    </p class="text offset-2"> @copy
 
-     
-        
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3153.860658122219!2d145.08607971252272!3d-37.76986532642493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1621477344463!5m2!1sen!2sau" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<a class="btn btn-outline-primary offset-6" href="#up">Go UP</a>
+</button>
+</footer>
 
-      
-
-       
-
-     
-          
-          
-
-
+</section>
+</div>
 </body>
 </html>
